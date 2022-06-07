@@ -21,11 +21,11 @@
 
 ## :scroll: Overview
 
-This web app enables users to draw doodles depending on a given prompt. A [deep learning algorithm](https://github.com/bryanlusse/doodle-classifier) predicts the class of the doodle while drawing. The aim of the game is to let the model correctly guess all drawings.
+This repository holds models trained to classify hand-drawn doodles. The model is used in a [web app](https://github.com/bryanlusse/doodle-classifier-app) that classifies doodles that you can draw online
 
-At the moment, 10 classes are supported. The prompt given for the drawings are therefore randomly drawn from these classes. The classes are: 'banana', 'calculator', 'cat', 'fish', 'hamburger', 'headphones', 'house', 'house plant', 'mushroom' and 'windmill'.
+Currently, we have trained two different models that can classify 10 and 30 different classes of doodles. The specifics can be found in the Notebooks.
 
-Later updates will use more classes.
+This repository might be updated with models able to classify more classes.
 
 ## :chart_with_upwards_trend: Model
 
@@ -49,7 +49,6 @@ Later updates will use more classes.
 
 ```
 .
-├── dataset
 ├── doodle_classifier.ipynb
 ├── doodle_classifier_colab.ipynb       # Notebook for running on Colab GPU's
 ├── LICENSE
@@ -57,7 +56,6 @@ Later updates will use more classes.
 ├── saved_models                        # Folder with all saved models
 │   ├── combined_v2_28                  # Model predicting 10 classes
 │   └── improved_30_28_20_epochs        # Model predicting 30 classes   
-├── training_1                          # Training checkpoints
 └── README.md
 ```
 
