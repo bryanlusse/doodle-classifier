@@ -5,6 +5,12 @@
 /coverage
 # production
 /build
+# data
+/dataset
+# training
+/training_1
+.ipynb_checkpoints
+.quickdrawcache
 # app
 /doodle-classifier
 # misc
